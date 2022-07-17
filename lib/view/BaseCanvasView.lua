@@ -112,10 +112,10 @@ BaseCanvasView.new = function(windowModel, settingModel, keyStatusModel)
                 red = 0
             },
             frame = {
-                x = CanvasConstants.PADDING,
-                y = CanvasConstants.PADDING,
-                h = #orderedWindows * CanvasConstants.ROW_HEIGHT + CanvasConstants.PADDING * 2,
-                w = CanvasConstants.PANEL_W - CanvasConstants.PADDING * 2
+                x = 0,
+                y = 0,
+                h = #orderedWindows * CanvasConstants.ROW_HEIGHT + CanvasConstants.PADDING * 2 + CanvasConstants.PADDING * 2,
+                w = CanvasConstants.PANEL_W
             },
             type = "rectangle"
         })

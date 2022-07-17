@@ -18,7 +18,7 @@ local function calcBaseCanvasFrame(orderedWindows)
 
     local baseCanvasFrame = {
         x = panelX,
-        y = panelY,
+        y = 100,
         h = panelH,
         w = CanvasConstants.PANEL_W
     }

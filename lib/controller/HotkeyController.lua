@@ -71,7 +71,21 @@ HotkeyController.new = function(mainController)
             self.isRegistrationMode = false
             self.panelLayoutView:selectNextRow(self.windowModel)
         end))
+        table.insert(self.allHotkeys, hs.hotkey.new({"alt"}, "j", function()
+            self.isRegistrationMode = false
+            self.panelLayoutView:selectNextRow(self.windowModel)
+        end, nil, function()
+            self.isRegistrationMode = false
+            self.panelLayoutView:selectNextRow(self.windowModel)
+        end))
         table.insert(self.allHotkeys, hs.hotkey.new({}, "up", function()
+            self.isRegistrationMode = false
+            self.panelLayoutView:selectPreviousRow(self.windowModel)
+        end, nil, function()
+            self.isRegistrationMode = false
+            self.panelLayoutView:selectPreviousRow(self.windowModel)
+        end))
+        table.insert(self.allHotkeys, hs.hotkey.new({"alt"}, "k", function()
             self.isRegistrationMode = false
             self.panelLayoutView:selectPreviousRow(self.windowModel)
         end, nil, function()
